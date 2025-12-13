@@ -2,64 +2,98 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-[#E2A3C7] text-gray-900">
+      {/* Hero */}
+      <section className="max-w-5xl mx-auto px-6 py-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Hábitos Que Transformam
+        </h1>
+        <p className="text-xl text-gray-600 mb-8">
+          Um método simples e prático para transformar sua rotina, aumentar
+          foco, disciplina e resultados em apenas 30 dias.
+        </p>
+        <a
+          href="https://pay.kiwify.com.br/AgAigQX?afid=3dcXLjI4"
+          target="_blank"
+          className="inline-block bg-[#60435F] text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:opacity-90 transition"
+        >
+          Quero transformar minha rotina
+        </a>
+      </section>
+
+      {/* Benefícios */}
+      <section className="bg-[#ce94b5] py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-10 text-center">
+            O que você vai aprender
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-6 bg-white rounded-2xl shadow">
+              <h3 className="font-semibold text-xl mb-3">
+                Criar hábitos duradouros
+              </h3>
+              <p className="text-gray-600">
+                Aprenda como o cérebro funciona e como criar hábitos que
+                realmente permanecem.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl shadow">
+              <h3 className="font-semibold text-xl mb-3">
+                Aumentar foco e disciplina
+              </h3>
+              <p className="text-gray-600">
+                Técnicas simples para manter constância mesmo sem motivação.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl shadow">
+              <h3 className="font-semibold text-xl mb-3">
+                Transformar sua rotina
+              </h3>
+              <p className="text-gray-600">
+                Um plano prático de 30 dias para aplicar no dia a dia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Para quem é */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">Para quem é este e-book?</h2>
+          <p className="text-gray-600 text-lg">
+            Para quem se sente improdutivo, começa e para projetos, quer mais
+            disciplina, organização e resultados reais na vida pessoal e
+            profissional.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* CTA */}
+      <section
+        id="comprar"
+        className="bg-[#60435F] text-white py-20 text-center"
+      >
+        <h2 className="text-3xl font-bold mb-6">
+          Comece sua transformação hoje
+        </h2>
+        <p className="text-gray-300 mb-8">
+          Acesso imediato ao e-book + atualizações futuras.
+        </p>
+        <a
+          href="https://pay.kiwify.com.br/AgAigQX?afid=3dcXLjI4"
+          target="_blank"
+          className="inline-block bg-white text-black px-10 py-4 rounded-2xl text-lg font-semibold hover:opacity-90 transition"
+        >
+          Comprar agora
+        </a>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-10 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} Hábitos Que Transformam. Todos os direitos
+        reservados.
+      </footer>
+    </main>
   );
 }
