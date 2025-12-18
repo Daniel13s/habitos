@@ -28,7 +28,8 @@ export default function Home() {
             O que você vai aprender
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 bg-white rounded-2xl shadow">
+            <div className="p-6 bg-white rounded-2xl shadow flex flex-col items-center">
+              <Image src="/habitos1.webp" width={200} height={50} alt="Representação de habitos - imagem 1" />
               <h3 className="font-semibold text-xl mb-3">
                 Criar hábitos duradouros
               </h3>
@@ -37,7 +38,8 @@ export default function Home() {
                 realmente permanecem.
               </p>
             </div>
-            <div className="p-6 bg-white rounded-2xl shadow">
+            <div className="p-6 bg-white rounded-2xl shadow flex flex-col items-center">
+              <Image src="/habitos2.webp" width={200} height={50} alt="Representação de habitos - imagem 1" />
               <h3 className="font-semibold text-xl mb-3">
                 Aumentar foco e disciplina
               </h3>
@@ -45,7 +47,8 @@ export default function Home() {
                 Técnicas simples para manter constância mesmo sem motivação.
               </p>
             </div>
-            <div className="p-6 bg-white rounded-2xl shadow">
+            <div className="p-6 bg-white rounded-2xl shadow flex flex-col items-center">
+              <Image src="/habitos3.webp" width={200} height={50} alt="Representação de habitos - imagem 1" />
               <h3 className="font-semibold text-xl mb-3">
                 Transformar sua rotina
               </h3>
